@@ -13,8 +13,8 @@ endif
 
 CROSS_COMPILE=arm-none-eabi-
 CC=arm-none-eabi-gcc  # gcc or g++
-CFLAGS+=-O3 -flto -Wall $(INCLUDES)
-LDFLAGS+=-flto
+CFLAGS+=-mcpu=arm810 -mfloat-abi=soft -O3 -flto -Wall $(INCLUDES)
+LDFLAGS+=-mcpu=arm810 -mfloat-abi=soft -flto
 LIBS+=
 
 # subdirectory for objects
