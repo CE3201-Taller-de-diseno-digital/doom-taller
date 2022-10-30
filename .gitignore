@@ -1,3 +1,4 @@
 doomgeneric/build
 doomgeneric/doomgeneric
-
+*.wad
+*.WAD
